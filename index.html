@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#12131e" />
+    <meta
+      name="description"
+      content="Estere Deicmane — programmer portfolio, projects, and skills."
+    />
+    <title>Estere.dev — Home</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">&lt;/&gt;</span
+          ><span class="brand-name"
+            >ESTERE.DEV<small>A PROGRAMMER PROFILE</small></span
+          ></a
+        >
+        <div class="top-actions">
+          <form class="search" id="global-search">
+            <label for="search-input">search:</label
+            ><input
+              id="search-input"
+              type="search"
+              placeholder="projects / skills"
+            /><button>Search</button>
+          </form>
+          <div class="utility-links">
+            <a href="about.html">about</a> |
+            <button class="tiny-btn" id="theme-toggle" type="button">
+              Soft view
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">⌂ home</a
+        ><a href="projects.html">projects</a><a href="skills.html">skills</a
+        ><a href="about.html">about</a><a href="contact.html">contact</a>
+      </nav>
+      <p class="crumb">◀ <span>home</span> / portfolio profile / 2026</p>
+      <div class="profile">
+        <aside class="side">
+          <p class="sparkle">✦ ⋆｡°✩⌘✩°｡⋆ ✦</p>
+          <img
+            class="profile-photo"
+            src="assets/profile-avatar.jpg"
+            alt="Profile picture"
+          />
+          <h2 class="profile-name">Estere Deicmane</h2>
+          <div class="handle">@estere.dev · programmer in training</div>
+          <a class="mini-link side-email" href="mailto:hiervin49@gmail.com"
+            >hiervin49@gmail.com</a
+          >
+          <div class="status">
+            <span class="dot"></span> open to learning &amp; collaboration
+          </div>
+          <div class="side-links">
+            <a href="projects.html">browse my projects</a
+            ><a href="skills.html">see my skill set</a
+            ><a href="about.html">read my profile</a
+            ><a href="contact.html">send a message</a>
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ quick facts ✦</div>
+            <div class="widget-body">
+              <b>Focus:</b> web development<br /><b>Favorite corner:</b> PHP +
+              databases<br /><b>Currently learning:</b> by building<br /><span
+                class="small-print"
+                >One project, one new idea at a time.</span
+              >
+            </div>
+          </section>
+          <section class="widget">
+            <div class="widget-title">✦ toolkit ✦</div>
+            <div class="widget-body">
+              <div class="tag-cloud">
+                <span class="tag">HTML</span><span class="tag">CSS</span
+                ><span class="tag">JavaScript</span><span class="tag">PHP</span
+                ><span class="tag">MySQL</span><span class="tag">Python</span>
+              </div>
+            </div>
+          </section>
+          <img class="workspace-photo" src="assets/coding-cat.jpg" alt="" />
+          <button class="action-btn" data-copy="url" type="button">
+            copy profile link
+          </button>
+        </aside>
+        <main class="main">
+          <div class="intro-banner">
+            <span class="pixel-icon" aria-hidden="true">⌨</span>
+            <div>
+              <h1>Hey, welcome to my corner of the web</h1>
+              <p>
+                I build things, learn from them, and keep making them better.
+              </p>
+            </div>
+            <a class="edit-link" href="about.html">[ view profile ]</a>
+          </div>
+          <p class="welcome">
+            Hi! I’m Estere, a programmer in training interested in web
+            development, databases, and turning ideas into useful projects. Take
+            a look around ✧
+          </p>
+          <h2 class="section-title">
+            things I know how to use <small>click a card for a code peek</small>
+          </h2>
+          <div class="grid">
+            <button class="skill-card active" data-skill="MySQL">
+              <strong>MySQL</strong
+              ><span>Store, connect &amp; query data</span></button
+            ><button class="skill-card" data-skill="PHP">
+              <strong>PHP</strong
+              ><span>Build server-side features</span></button
+            ><button class="skill-card" data-skill="JavaScript">
+              <strong>JavaScript</strong
+              ><span>Add useful interactions</span></button
+            ><button class="skill-card" data-skill="Python">
+              <strong>Python</strong
+              ><span>Automate repeatable work</span></button
+            ><button class="skill-card" data-skill="CSS">
+              <strong>CSS</strong
+              ><span>Style pages for every screen</span></button
+            ><button class="skill-card" data-skill="HTML">
+              <strong>HTML</strong><span>Structure clear web pages</span>
+            </button>
+          </div>
+          <pre
+            id="code-demo"
+            class="demo-output"
+          ><span class="prompt">$ mysql — example</span>
+SELECT project, status
+FROM portfolio_projects
+WHERE status = 'student work';</pre>
+          <h2 class="section-title">
+            a few things I’ve been building
+            <small
+              ><a class="mini-link" href="projects.html"
+                >view all projects →</a
+              ></small
+            >
+          </h2>
+          <div class="blurb-row">
+            <div class="blurb"><b>PHP + MySQL</b>classroom portal</div>
+            <div class="blurb"><b>Python</b>event scraper</div>
+            <div class="blurb"><b>Learning</b>every project</div>
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ what I care about ✦</div>
+            <div class="widget-body">
+              Thoughtful interfaces, tidy data, and code that makes everyday
+              tasks easier. I like mixing practical programming with a little
+              visual personality.
+            </div>
+          </section>
+          <p class="small-print">
+            Currently exploring: Laravel · MySQL · responsive web design
+          </p>
+        </main>
+      </div>
+      <footer class="footer">
+        made with <span style="color: #93c6ef">♥</span> &amp; code ·
+        <a href="projects.html">projects</a> · <span data-year></span>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

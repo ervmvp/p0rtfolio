@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Programming tools and skills used by Ervins Deicmanis."
+    />
+    <title>Ervins.dev — Skills</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">&lt;/&gt;</span
+          ><span class="brand-name"
+            >ESTERE.DEV<small>A PROGRAMMER PROFILE</small></span
+          ></a
+        >
+        <div class="top-actions">
+          <form class="search" id="global-search">
+            <label for="search-input">search:</label
+            ><input
+              id="search-input"
+              type="search"
+              placeholder="projects / skills"
+            /><button>Search</button>
+          </form>
+          <div class="utility-links">
+            <a href="about.html">about</a> |
+            <button class="tiny-btn" id="theme-toggle" type="button">
+              Soft view
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">⌂ home</a><a href="projects.html">projects</a
+        ><a href="skills.html" aria-current="page">skills</a
+        ><a href="about.html">about</a><a href="contact.html">contact</a>
+      </nav>
+      <p class="crumb">◀ <a href="index.html">home</a> / <span>skills</span></p>
+      <div class="profile">
+        <aside class="side">
+          <p class="sparkle">✦ ⋆｡°✩⌘✩°｡⋆ ✦</p>
+          <img
+            class="profile-photo"
+            src="assets/profile-avatar.jpg"
+            alt="Profile picture"
+          />
+          <h2 class="profile-name">Estere Deicmane</h2>
+          <div class="handle">@estere.dev · toolkit</div>
+          <a class="mini-link side-email" href="mailto:hiervin49@gmail.com"
+            >hiervin49@gmail.com</a
+          >
+          <div class="status"><span class="dot"></span> always learning</div>
+          <div class="side-links">
+            <a href="index.html">home</a
+            ><a href="projects.html">projects using these</a
+            ><a href="about.html">my approach</a
+            ><a href="contact.html">contact</a>
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ web basics ✦</div>
+            <div class="widget-body">
+              HTML gives a page structure. CSS styles it. JavaScript makes it
+              respond.
+            </div>
+          </section>
+        </aside>
+        <main class="main">
+          <div class="intro-banner">
+            <span class="pixel-icon">⌘</span>
+            <div>
+              <h1>My toolkit</h1>
+              <p>Languages and tools I’ve used in projects and practice.</p>
+            </div>
+          </div>
+          <p class="welcome">
+            I’m building experience through coursework and hands-on projects.
+            Here’s what I use and what I practice with each tool.
+          </p>
+          <h2 class="section-title">languages &amp; web technologies</h2>
+          <div class="skill-row">
+            <div class="skill-name">HTML</div>
+            <p>
+              Build the structure of a page with headings, links, forms, and
+              accessible content.<code class="code-sample"
+                >&lt;main&gt;Portfolio content&lt;/main&gt;</code
+              >
+            </p>
+          </div>
+          <div class="skill-row">
+            <div class="skill-name">CSS</div>
+            <p>
+              Style layouts, colors, responsive pages, and small visual
+              details.<code class="code-sample"
+                >.card { display: grid; gap: 1rem; }</code
+              >
+            </p>
+          </div>
+          <div class="skill-row">
+            <div class="skill-name">JavaScript</div>
+            <p>
+              Add browser interactions such as search, filters, and
+              buttons.<code class="code-sample"
+                >button.addEventListener('click', show);</code
+              >
+            </p>
+          </div>
+          <div class="skill-row">
+            <div class="skill-name">PHP</div>
+            <p>
+              Build server-side pages and connect application logic with a
+              database.<code class="code-sample">echo "Hello from PHP";</code>
+            </p>
+          </div>
+          <div class="skill-row">
+            <div class="skill-name">MySQL</div>
+            <p>
+              Store related information and retrieve it with queries.<code
+                class="code-sample"
+                >SELECT * FROM projects WHERE status = 'active';</code
+              >
+            </p>
+          </div>
+          <div class="skill-row">
+            <div class="skill-name">Python</div>
+            <p>
+              Write scripts for repeatable tasks, data cleanup, and
+              automation.<code class="code-sample"
+                >for item in events: print(item.title)</code
+              >
+            </p>
+          </div>
+          <h2 class="section-title">tools &amp; frameworks</h2>
+          <div class="tag-cloud">
+            <span class="tag">Laravel</span><span class="tag">Laragon</span
+            ><span class="tag">VS Code</span><span class="tag">Git basics</span>
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ how I learn ✦</div>
+            <div class="widget-body">
+              I learn by building a small working version, finding what breaks,
+              and improving it step by step.
+              <a class="mini-link" href="projects.html"
+                >See the projects where I use these skills →</a
+              >
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        toolkit · <a href="projects.html">project examples</a> ·
+        <span data-year></span>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

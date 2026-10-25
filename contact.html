@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact Estere Deicmane about programming and projects."
+    />
+    <title>Estere.dev — Contact</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">&lt;/&gt;</span
+          ><span class="brand-name"
+            >ESTERE.DEV<small>A PROGRAMMER PROFILE</small></span
+          ></a
+        >
+        <div class="top-actions">
+          <form class="search" id="global-search">
+            <label for="search-input">search:</label
+            ><input
+              id="search-input"
+              type="search"
+              placeholder="projects / skills"
+            /><button>Search</button>
+          </form>
+          <div class="utility-links">
+            <a href="about.html">about</a> |
+            <button class="tiny-btn" id="theme-toggle" type="button">
+              Soft view
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">⌂ home</a><a href="projects.html">projects</a
+        ><a href="skills.html">skills</a><a href="about.html">about</a
+        ><a href="contact.html" aria-current="page">contact</a>
+      </nav>
+      <p class="crumb">
+        ◀ <a href="index.html">home</a> / <span>contact</span>
+      </p>
+      <div class="profile">
+        <aside class="side">
+          <p class="sparkle">✦ ⋆｡°✩⌘✩°｡⋆ ✦</p>
+          <img
+            class="profile-photo"
+            src="assets/profile-avatar.jpg"
+            alt="Profile picture"
+          />
+          <h2 class="profile-name">Ervins Deicmanis</h2>
+          <div class="handle">@ervins.dev · messages welcome</div>
+          <a class="mini-link side-email" href="mailto:hiervin49@gmail.com"
+            >hiervin49@gmail.com</a
+          >
+          <div class="status">
+            <span class="dot"></span> open to a friendly hello
+          </div>
+          <div class="side-links">
+            <a href="index.html">home</a><a href="projects.html">projects</a
+            ><a href="skills.html">skills</a><a href="about.html">about me</a>
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ message tip ✦</div>
+            <div class="widget-body">
+              A few details about your idea help me understand what you have in
+              mind.
+            </div>
+          </section>
+        </aside>
+        <main class="main">
+          <div class="intro-banner">
+            <span class="pixel-icon">✉</span>
+            <div>
+              <h1>Let’s talk</h1>
+              <p>Have a question or an idea? Write a short message.</p>
+            </div>
+          </div>
+          <div class="notice">
+            This static portfolio does not send messages to a server. After you
+            submit, the message is shared with your device’s share menu or
+            copied so you can paste it into email or chat. You can also email me
+            at
+            <a class="mini-link" href="mailto:hiervin49@gmail.com"
+              >hiervin49@gmail.com</a
+            >.
+          </div>
+          <form class="contact-form" id="contact-form">
+            <label for="name">Your name</label
+            ><input id="name" name="name" autocomplete="name" required /><label
+              for="email"
+              >Your email</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            /><label for="message">Message</label
+            ><textarea
+              id="message"
+              name="message"
+              required
+              placeholder="What would you like to talk about?"
+            ></textarea>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <button class="action-btn" type="submit">prepare message</button>
+          </form>
+          <h2 class="section-title">other ways to explore</h2>
+          <div class="widget">
+            <div class="widget-title">✦ portfolio pages ✦</div>
+            <div class="widget-body">
+              <a class="mini-link" href="projects.html">Browse projects</a> ·
+              <a class="mini-link" href="skills.html">See technologies</a> ·
+              <a class="mini-link" href="about.html">Read about me</a>
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer class="footer">
+        thanks for stopping by · <a href="index.html">return home</a> ·
+        <span data-year></span>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

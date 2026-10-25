@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Selected programming projects by Ervins Deicmanis."
+    />
+    <title>Ervins.dev — Projects</title>
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">&lt;/&gt;</span
+          ><span class="brand-name"
+            >ESTERE.DEV<small>A PROGRAMMER PROFILE</small></span
+          ></a
+        >
+        <div class="top-actions">
+          <form class="search" id="global-search">
+            <label for="search-input">search:</label
+            ><input
+              id="search-input"
+              type="search"
+              placeholder="projects / skills"
+            /><button>Search</button>
+          </form>
+          <div class="utility-links">
+            <a href="about.html">about</a> |
+            <button class="tiny-btn" id="theme-toggle" type="button">
+              Soft view
+            </button>
+          </div>
+        </div>
+      </header>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">⌂ home</a
+        ><a href="projects.html" aria-current="page">projects</a
+        ><a href="skills.html">skills</a><a href="about.html">about</a
+        ><a href="contact.html">contact</a>
+      </nav>
+      <p class="crumb">
+        ◀ <a href="index.html">home</a> / <span>projects</span>
+      </p>
+      <div class="profile">
+        <aside class="side">
+          <p class="sparkle">✦ ⋆｡°✩⌘✩°｡⋆ ✦</p>
+          <img
+            class="profile-photo"
+            src="assets/profile-avatar.jpg"
+            alt="Profile picture"
+          />
+          <h2 class="profile-name">Ervins Deicmanis</h2>
+          <div class="handle">@ervins.dev · project log</div>
+          <a class="mini-link side-email" href="mailto:hiervin49@gmail.com"
+            >hiervin49@gmail.com</a
+          >
+          <div class="status">
+            <span class="dot"></span> making &amp; improving
+          </div>
+          <div class="side-links">
+            <a href="index.html">back home</a
+            ><a href="skills.html">technologies used</a
+            ><a href="about.html">about me</a
+            ><a href="contact.html">get in touch</a>
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ project notes ✦</div>
+            <div class="widget-body">
+              Each project is a chance to practice a new part of programming and
+              make something concrete.
+            </div>
+          </section>
+          <div class="tag-cloud">
+            <span class="tag">student work</span><span class="tag">web</span
+            ><span class="tag">automation</span>
+          </div>
+        </aside>
+        <main class="main">
+          <div class="intro-banner">
+            <span class="pixel-icon">▣</span>
+            <div>
+              <h1>Projects &amp; experiments</h1>
+              <p>A few things I’ve worked on while learning to code.</p>
+            </div>
+          </div>
+          <p class="welcome">
+            These examples come from my programming and school work. Select
+            “details” to see what each one does.
+          </p>
+          <div class="filter-row">
+            <input
+              id="project-filter"
+              type="search"
+              placeholder="Filter by name or technology…"
+              aria-label="Filter projects"
+            /><span class="filter-count" id="filter-count">3 projects</span>
+          </div>
+          <div class="project-list">
+            <article
+              class="project-card"
+              data-title="Classroom Portal"
+              data-detail="<p>A classroom management prototype built with plain PHP and MySQL. It explores separate admin, teacher, and student roles, class invitations, assignments, file submissions, grading, and comments.</p><p><b>Practiced:</b> authentication flows, CRUD, relational data, file handling, and role-based pages.</p><p><b>Status:</b> student project / prototype.</p>"
+            >
+              <div class="project-icon">⌂</div>
+              <div>
+                <h3>Classroom Portal</h3>
+                <p>
+                  A school-focused prototype for classes, assignments, and
+                  feedback.
+                </p>
+                <div class="tag-cloud">
+                  <span class="tag">PHP</span><span class="tag">MySQL</span
+                  ><span class="tag">HTML</span><span class="tag">CSS</span>
+                </div>
+              </div>
+              <button type="button" data-project>details</button>
+            </article>
+            <article
+              class="project-card"
+              data-title="Children’s Events Scraper"
+              data-detail="<p>A Python automation project that gathers event and talk information, filters for child-related topics, cleans the text, and organizes the results for review and documentation.</p><p><b>Practiced:</b> data collection, filtering, text cleanup, and generating a useful report.</p><p><b>Status:</b> internship project documentation.</p>"
+            >
+              <div class="project-icon">⌕</div>
+              <div>
+                <h3>Children’s Events Scraper</h3>
+                <p>
+                  A Python workflow for finding and organizing relevant talks
+                  and events.
+                </p>
+                <div class="tag-cloud">
+                  <span class="tag">Python</span
+                  ><span class="tag">automation</span
+                  ><span class="tag">data cleanup</span>
+                </div>
+              </div>
+              <button type="button" data-project>details</button>
+            </article>
+            <article
+              class="project-card"
+              data-title="SQL Practice Lab"
+              data-detail="<p>A collection of database exercises around a small shop schema. The work includes joining related tables, grouping results, creating views and indexes, and using triggers to validate purchases.</p><p><b>Practiced:</b> MySQL queries, schema relationships, views, indexes, and triggers.</p><p><b>Status:</b> coursework and exercises.</p>"
+            >
+              <div class="project-icon">⌘</div>
+              <div>
+                <h3>SQL Practice Lab</h3>
+                <p>
+                  Database exercises for products, customers, orders, and stock.
+                </p>
+                <div class="tag-cloud">
+                  <span class="tag">MySQL</span><span class="tag">SQL</span
+                  ><span class="tag">views</span
+                  ><span class="tag">triggers</span>
+                </div>
+              </div>
+              <button type="button" data-project>details</button>
+            </article>
+          </div>
+          <div class="empty-state" id="empty-state" hidden>
+            No projects match that search. Try “PHP”, “Python”, or “SQL”.
+          </div>
+          <section class="widget">
+            <div class="widget-title">✦ what’s next ✦</div>
+            <div class="widget-body">
+              Keep adding features, improve accessibility, and try new ideas
+              with Laravel, JavaScript, and databases.
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        project log · <a href="skills.html">see skills</a> ·
+        <span data-year></span>
+      </footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <dialog id="project-modal">
+      <div class="modal-head">
+        <h2 id="modal-title">Project</h2>
+        <button class="modal-close" aria-label="Close details">×</button>
+      </div>
+      <div class="modal-copy" id="modal-content"></div>
+    </dialog>
+  </body>
+</html>
