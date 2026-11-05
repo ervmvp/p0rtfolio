@@ -28,7 +28,7 @@ $$("[data-skill]").forEach((btn) =>
       out.innerHTML =
         '<span class="prompt">$ ' +
         key.toLowerCase() +
-        " — example</span>\n" +
+        " - example</span>\n" +
         examples[key]
           .replaceAll("&", "&amp;")
           .replaceAll("<", "&lt;")
