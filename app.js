@@ -79,7 +79,7 @@ function filterProjects() {
   const q = projectFilter.value.trim().toLowerCase();
   let visible = 0;
   cards.forEach((card) => {
-    const match = card.textContent.toLowerCase().includes(q);
+    const match = card.dataset.title.toLowerCase().includes(q);
     card.hidden = !match;
     if (match) visible++;
   });
