@@ -490,6 +490,9 @@ textarea {
   gap: 10px;
   align-items: center;
 }
+.project-card[hidden] {
+  display: none;
+}
 .project-icon {
   width: 48px;
   height: 48px;
