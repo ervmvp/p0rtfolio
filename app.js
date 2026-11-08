@@ -55,7 +55,7 @@ $$("[data-copy]").forEach((btn) =>
     try {
       await navigator.clipboard.writeText(
         btn.dataset.copy === "url"
-          ? location.origin + location.pathname
+          ? new URL("index.html", location.href).href
           : btn.dataset.copy,
       );
       toast("Copied to clipboard");
