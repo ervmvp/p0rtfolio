@@ -9,7 +9,7 @@
   --blue: #93c6ef;
   --lav: #d9c3ed;
   --dark: #12131e;
-  --shadow: 0 14px 45px #05060ac9;
+  --shadow: 0 14px 46px #05060ac9;
 }
 * {
   box-sizing: border-box;
@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
   color: var(--ink);
   font:
-    14px/1.5 "Space Grotesk",
+    16px/1.5 "Space Grotesk",
     Arial,
     sans-serif;
   background: #11131c url("assets/site-background.jpg") center/cover fixed
@@ -37,11 +37,11 @@ body:before {
   z-index: 5;
   background: repeating-linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.035) 0 1px,
-    transparent 1px 3px
+    #ffffff09 0 2px,
+    transparent 2px 4px
   );
   mix-blend-mode: screen;
-  opacity: 0.45;
+  opacity: 0.5;
 }
 a {
   color: inherit;
@@ -54,8 +54,8 @@ textarea {
   color: inherit;
 }
 .wrap {
-  max-width: 770px;
-  margin: 12px auto 42px;
+  max-width: 780px;
+  margin: 12px auto 46px;
   padding: 0 12px;
   position: relative;
   z-index: 1;
@@ -64,7 +64,7 @@ textarea {
   height: 72px;
   background: rgba(9, 10, 18, 0.88);
   border: 2px solid var(--line);
-  border-radius: 7px;
+  border-radius: 8px;
   box-shadow:
     0 0 14px #ccd2ef30,
     inset 0 0 18px #a3a8d018;
@@ -72,7 +72,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 10px 18px;
-  gap: 16px;
+  gap: 18px;
 }
 .brand {
   display: flex;
@@ -81,20 +81,20 @@ textarea {
   min-width: 180px;
 }
 .brand-mark {
-  width: 42px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   display: grid;
   place-items: center;
   color: var(--accent-blue);
   font-size: 24px;
-  border: 1px solid #93c6ef60;
+  border: 2px solid #93c6ef60;
   background: linear-gradient(140deg, #93c6ef26, #1c1e31);
   text-shadow: 0 0 10px var(--accent-blue);
 }
 .brand-name {
   font-weight: 700;
-  letter-spacing: 0.16em;
-  font-size: 13px;
+  letter-spacing: 0.15em;
+  font-size: 14px;
   color: var(--accent-blue);
 }
 .brand-name small {
@@ -113,9 +113,9 @@ textarea {
 .search {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   font:
-    11px "DM Mono",
+    12px "DM Mono",
     monospace;
   color: #eee;
 }
@@ -123,9 +123,9 @@ textarea {
   width: 130px;
   background: #d9d8df;
   color: #151521;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  padding: 4px 7px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 4px 8px;
   outline: none;
 }
 .search input:focus {
@@ -135,15 +135,15 @@ textarea {
 .search button {
   background: linear-gradient(#fbf9ff, #c8c5d1);
   color: #191723;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  padding: 3px 9px;
-  font-size: 11px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
   cursor: pointer;
-  box-shadow: 0 1px 3px #000;
+  box-shadow: 0 2px 4px #000;
 }
 .utility-links {
-  font-size: 11px;
+  font-size: 12px;
   color: #d9d5df;
   white-space: nowrap;
 }
@@ -159,11 +159,11 @@ textarea {
   padding: 8px 0 10px;
   color: #ddd7e1;
   font-size: 12px;
-  text-shadow: 0 1px 3px #000;
+  text-shadow: 0 2px 4px #000;
 }
 .nav a {
-  padding: 0 7px;
-  border-right: 1px solid #8e8996;
+  padding: 0 8px;
+  border-right: 2px solid #8e8996;
 }
 .nav a:last-child {
   border: 0;
@@ -172,22 +172,22 @@ textarea {
   color: #cde7ff;
 }
 .crumb {
-  font-size: 11px;
+  font-size: 12px;
   color: #d5d0df;
-  margin: 0 0 8px 3px;
+  margin: 0 0 8px 4px;
 }
 .crumb span {
   color: var(--accent-blue);
 }
 .profile {
   display: grid;
-  grid-template-columns: 252px 1fr;
+  grid-template-columns: 256px 1fr;
   border: 2px solid var(--line);
   border-radius: 8px;
   background: linear-gradient(
     125deg,
-    rgba(10, 11, 20, 0.83),
-    rgba(22, 23, 35, 0.7)
+    #0a0b14d4,
+    #161723b3
   );
   box-shadow:
     var(--shadow),
@@ -196,29 +196,29 @@ textarea {
   min-height: 680px;
 }
 .side {
-  padding: 15px 13px 18px;
-  border-right: 1px solid #e3d9f363;
+  padding: 16px 16px 18px;
+  border-right: 2px solid #e3d9f363;
   background: linear-gradient(150deg, #11121bd9, #0c0e19cc);
 }
 .main {
-  padding: 15px 14px 24px;
+  padding: 14px 14px 24px;
   min-width: 0;
 }
 .sparkle {
   font:
-    15px Georgia,
+    16px Georgia,
     serif;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.25em;
   text-align: center;
   color: #eee3f6;
-  text-shadow: 0 0 9px #d5b9f9;
+  text-shadow: 0 0 10px #d5b9f9;
   margin: 0 0 10px;
 }
 .profile-photo {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  margin: 13px auto 10px;
+  margin: 14px auto 10px;
   border: 4px solid #d4c7eb;
   box-shadow: 0 0 18px #b3a9ef64;
   display: block;
@@ -229,27 +229,27 @@ textarea {
   width: 100%;
   aspect-ratio: 3 / 2;
   margin: 12px 0;
-  border: 1px solid #e3d9f363;
+  border: 2px solid #e3d9f363;
   border-radius: 4px;
   object-fit: cover;
 }
 .profile-name {
   text-align: center;
   font:
-    600 17px Georgia,
+    600 18px Georgia,
     serif;
-  margin: 5px 0 1px;
+  margin: 6px 0 2px;
 }
 .handle {
   text-align: center;
   color: #beb5c9;
   font:
-    11px "DM Mono",
+    12px "DM Mono",
     monospace;
 }
 .side-email {
   display: block;
-  margin: 3px 0 4px;
+  margin: 2px 0 4px;
   text-align: center;
   font-size: 10px;
 }
@@ -259,24 +259,24 @@ textarea {
   align-items: center;
   gap: 6px;
   color: #d6e8d5;
-  font-size: 11px;
-  margin: 8px 0 13px;
+  font-size: 12px;
+  margin: 8px 0 14px;
 }
 .dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background: #9adb9f;
   box-shadow: 0 0 8px #9adb9f;
 }
 .side-links {
-  border-top: 1px dotted #afa4ba80;
-  padding-top: 9px;
-  margin: 6px 0 15px;
+  border-top: 2px dotted #afa4ba80;
+  padding-top: 10px;
+  margin: 6px 0 16px;
 }
 .side-links a {
   display: block;
-  padding: 3px 2px;
+  padding: 4px 2px;
   font-size: 12px;
   color: #e1dce8;
 }
@@ -290,37 +290,37 @@ textarea {
   color: #cde7ff;
 }
 .widget {
-  border: 1px solid #e5d8ed75;
-  border-radius: 5px;
+  border: 2px solid #e5d8ed75;
+  border-radius: 6px;
   background: #10121de0;
-  margin: 11px 0;
+  margin: 12px 0;
   overflow: hidden;
 }
 .widget-title {
   background: linear-gradient(90deg, #e9e5ed, #cfc9d8);
   color: #151522;
-  padding: 3px 8px;
+  padding: 4px 8px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 .widget-body {
-  padding: 9px;
+  padding: 10px;
   font-size: 12px;
   color: #e3dce8;
 }
 .side .widget-body {
-  font-size: 11px;
+  font-size: 12px;
 }
 .tag-cloud {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 6px;
 }
 .tag {
   display: inline-block;
-  padding: 3px 6px;
-  border: 1px solid #d1c5e475;
+  padding: 4px 6px;
+  border: 2px solid #d1c5e475;
   background: linear-gradient(120deg, #262438, #161a26);
   font:
     10px "DM Mono",
@@ -346,26 +346,26 @@ textarea {
 }
 .intro-banner {
   min-height: 82px;
-  border: 1px solid #ddd4e78a;
+  border: 2px solid #ddd4e78a;
   border-radius: 6px;
   background:
     linear-gradient(100deg, #11131ede, #242638bf),
     url("assets/site-background.jpg") center/cover;
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 18px;
   padding: 12px 16px;
   margin-bottom: 10px;
 }
 .pixel-icon {
   font-size: 36px;
-  filter: drop-shadow(0 3px 0 #050609);
+  filter: drop-shadow(0 4px 0 #050609);
 }
 .intro-banner h1 {
   font:
-    600 19px Georgia,
+    600 20px Georgia,
     serif;
-  margin: 0 0 3px;
+  margin: 0 0 4px;
 }
 .intro-banner p {
   margin: 0;
@@ -374,14 +374,14 @@ textarea {
 }
 .edit-link {
   margin-left: auto;
-  font-size: 11px;
+  font-size: 12px;
   color: #b9ddfa;
   white-space: nowrap;
 }
 .welcome {
   font-size: 12px;
   color: #d5cddd;
-  margin: 10px 0 13px;
+  margin: 10px 0 14px;
 }
 .section-title {
   display: flex;
@@ -390,8 +390,8 @@ textarea {
   background: linear-gradient(90deg, #e8e4ed, #cfcbd8 70%, #ded9e6);
   color: #171621;
   border-radius: 4px;
-  padding: 3px 8px;
-  margin: 13px 0 8px;
+  padding: 4px 8px;
+  margin: 14px 0 8px;
   font-weight: 700;
   font-size: 12px;
 }
@@ -410,13 +410,13 @@ textarea {
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 7px;
+  gap: 8px;
 }
 .skill-card {
-  border: 1px solid #d3c9e488;
+  border: 2px solid #d3c9e488;
   background: linear-gradient(140deg, #222334ed, #11131ce8);
-  min-height: 55px;
-  padding: 7px 8px;
+  min-height: 56px;
+  padding: 8px 8px;
   cursor: pointer;
   text-align: left;
   transition:
@@ -443,14 +443,14 @@ textarea {
   margin-top: 2px;
 }
 .demo-output {
-  border: 1px solid #b9a9ca75;
+  border: 2px solid #b9a9ca75;
   background: #080b12;
   color: #c5f0d2;
-  padding: 10px 11px;
+  padding: 10px 12px;
   margin-top: 8px;
   border-radius: 4px;
   font:
-    11px/1.55 "DM Mono",
+    12px/1.55 "DM Mono",
     monospace;
   white-space: pre-wrap;
   min-height: 58px;
@@ -461,27 +461,27 @@ textarea {
 .blurb-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+  gap: 6px;
 }
 .blurb {
   font-size: 10px;
   text-align: center;
-  padding: 7px 4px;
-  border: 1px solid #d5cae566;
+  padding: 8px 4px;
+  border: 2px solid #d5cae566;
   background: #242236;
   color: #e8dce9;
 }
 .blurb b {
   display: block;
   color: #b9ddfa;
-  font-size: 11px;
+  font-size: 12px;
 }
 .project-list {
   display: grid;
   gap: 8px;
 }
 .project-card {
-  border: 1px solid #d2c6e388;
+  border: 2px solid #d2c6e388;
   background: linear-gradient(120deg, #222333e8, #12141eea);
   padding: 10px;
   border-radius: 4px;
@@ -500,16 +500,16 @@ textarea {
   place-items: center;
   font-size: 22px;
   background: linear-gradient(140deg, #93c6ef3b, #9ac8ee25);
-  border: 1px solid #93c6ef7a;
+  border: 2px solid #93c6ef7a;
 }
 .project-card h3 {
   font:
     600 14px Georgia,
     serif;
-  margin: 0 0 3px;
+  margin: 0 0 4px;
 }
 .project-card p {
-  font-size: 11px;
+  font-size: 12px;
   color: #c9c2d0;
   margin: 0;
 }
@@ -518,11 +518,11 @@ textarea {
 }
 .project-card button,
 .action-btn {
-  border: 1px solid #eee1f5;
+  border: 2px solid #eee1f5;
   background: linear-gradient(#f3edf7, #cbc5d4);
   color: #17151f;
-  padding: 5px 8px;
-  border-radius: 3px;
+  padding: 6px 8px;
+  border-radius: 4px;
   font-size: 10px;
   font-weight: 600;
   cursor: pointer;
@@ -532,11 +532,11 @@ textarea {
 .action-btn:hover,
 .tiny-btn:hover {
   filter: brightness(1.08);
-  transform: translateY(-1px);
+  transform: translateY(0px);
 }
 .filter-row {
   display: flex;
-  gap: 7px;
+  gap: 8px;
   align-items: center;
   margin: 8px 0;
 }
@@ -544,9 +544,9 @@ textarea {
   flex: 1;
   min-width: 0;
   background: #10121d;
-  border: 1px solid #cfc2dd99;
-  border-radius: 3px;
-  padding: 7px 9px;
+  border: 2px solid #cfc2dd99;
+  border-radius: 4px;
+  padding: 8px 10px;
   font-size: 12px;
 }
 .filter-row input:focus {
@@ -563,22 +563,22 @@ textarea {
   padding: 18px;
   text-align: center;
   color: #cec4d7;
-  border: 1px dashed #cfc0dd80;
+  border: 2px dashed #cfc0dd80;
 }
 .skill-row {
   display: grid;
   grid-template-columns: 98px 1fr;
   gap: 12px;
   align-items: start;
-  padding: 9px 0;
-  border-bottom: 1px dotted #c6b8d969;
+  padding: 10px 0;
+  border-bottom: 2px dotted #c6b8d969;
 }
 .skill-row:last-child {
   border: 0;
 }
 .skill-name {
   font:
-    600 13px "DM Mono",
+    600 14px "DM Mono",
     monospace;
   color: #c6e4fa;
 }
@@ -589,7 +589,7 @@ textarea {
 }
 .code-sample {
   display: block;
-  margin-top: 5px;
+  margin-top: 6px;
   color: #bce9cb;
   font:
     10px "DM Mono",
@@ -601,17 +601,17 @@ textarea {
   margin: 8px 0;
 }
 .bullet-list {
-  padding-left: 17px;
+  padding-left: 18px;
   color: #d9d1dd;
   font-size: 12px;
 }
 .bullet-list li {
-  padding: 3px 0;
+  padding: 4px 0;
 }
 .contact-form label {
   display: block;
-  font-size: 11px;
-  margin: 8px 0 3px;
+  font-size: 12px;
+  margin: 8px 0 4px;
   color: #e4dce8;
 }
 .contact-form input,
@@ -619,9 +619,9 @@ textarea {
   display: block;
   width: 100%;
   background: #0d1019;
-  border: 1px solid #cfc2dd88;
+  border: 2px solid #cfc2dd88;
   padding: 8px;
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 12px;
 }
 .contact-form textarea {
@@ -629,15 +629,15 @@ textarea {
   resize: vertical;
 }
 .notice {
-  font-size: 11px;
+  font-size: 12px;
   color: #c5bdca;
   background: #0b0d15;
-  border-left: 3px solid var(--blue);
+  border-left: 4px solid var(--blue);
   padding: 8px;
   margin: 10px 0;
 }
 .form-status {
-  font-size: 11px;
+  font-size: 12px;
   color: #bde9c6;
   min-height: 18px;
 }
@@ -674,8 +674,8 @@ textarea {
 dialog {
   background: #11131e;
   color: var(--ink);
-  border: 1px solid #e5d9ed;
-  border-radius: 7px;
+  border: 2px solid #e5d9ed;
+  border-radius: 8px;
   max-width: 510px;
   width: calc(100% - 32px);
   box-shadow: 0 20px 70px #000;
@@ -684,7 +684,7 @@ dialog {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #c9bad966;
+  border-bottom: 2px solid #c9bad966;
   padding-bottom: 8px;
 }
 .modal-head h2 {
@@ -697,7 +697,7 @@ dialog {
   background: transparent;
   border: 0;
   color: #fff;
-  font-size: 21px;
+  font-size: 22px;
   cursor: pointer;
 }
 .modal-copy {
@@ -719,8 +719,8 @@ dialog {
 }
 @media (max-width: 640px) {
   .wrap {
-    margin-top: 7px;
-    padding: 0 7px;
+    margin-top: 8px;
+    padding: 0 8px;
   }
   .topbar {
     height: auto;
@@ -738,7 +738,7 @@ dialog {
     display: none;
   }
   .nav {
-    font-size: 11px;
+    font-size: 12px;
   }
   .nav a {
     padding: 2px 6px;
@@ -748,7 +748,7 @@ dialog {
   }
   .side {
     border-right: 0;
-    border-bottom: 1px solid #e3d9f363;
+    border-bottom: 2px solid #e3d9f363;
     padding: 10px;
   }
   .side > .sparkle,
@@ -759,14 +759,14 @@ dialog {
   .profile-photo {
     width: 84px;
     height: 84px;
-    margin: 5px auto;
+    margin: 6px auto;
   }
   .main {
     padding: 10px;
   }
   .intro-banner {
     min-height: 72px;
-    padding: 9px;
+    padding: 10px;
   }
   .intro-banner h1 {
     font-size: 16px;
@@ -803,7 +803,7 @@ dialog {
     width: 34px;
   }
   .brand-name {
-    font-size: 11px;
+    font-size: 12px;
   }
   .nav a {
     padding: 2px 4px;
