@@ -110,34 +110,4 @@ if (modal) {
     if (e.target === modal) modal.close();
   });
 }
-const contactForm = $("#contact-form");
-if (contactForm)
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const data = new FormData(contactForm),
-      name = (data.get("name") || "").toString().trim(),
-      email = (data.get("email") || "").toString().trim(),
-      message = (data.get("message") || "").toString().trim();
-    if (!name || !email || !message) {
-      $("#form-status").textContent = "Please complete each field.";
-      return;
-    }
-    const text = `Hello Ervins,\n\n${message}\n\nFrom: ${name} (${email})`;
-    if (navigator.share) {
-      navigator
-        .share({ title: "Portfolio message", text })
-        .then(() => ($("#form-status").textContent = "Message shared."))
-        .catch(() => copyContact(text));
-    } else copyContact(text);
-  });
-async function copyContact(text) {
-  try {
-    await navigator.clipboard.writeText(text);
-    $("#form-status").textContent =
-      "Message copied. Paste it into your email or preferred chat app.";
-  } catch {
-    $("#form-status").textContent =
-      "Message prepared. Select and copy the text: " + text;
-  }
-}
 $$("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
